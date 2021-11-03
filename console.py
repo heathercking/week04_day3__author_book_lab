@@ -19,4 +19,11 @@ book_2 = Book("IT", author_2, "Penguin Books", "1970")
 book_repository.save(book_2)
 
 
+for author in author_repository.select_all():
+    print(author.__dict__)
+
+author = author_repository.select(author_1.id)
+print(author.__dict__)
+
+
 pdb.set_trace()
