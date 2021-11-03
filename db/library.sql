@@ -13,5 +13,5 @@ CREATE TABLE books (
     title VARCHAR(255),
     author_id INT REFERENCES authors(id), 
     publisher VARCHAR(255),
-    pubication_date VARCHAR(255)
+    publication_date VARCHAR(255)
 );
