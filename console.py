@@ -34,8 +34,8 @@ for book in book_repository.select_all():
 book = book_repository.select(book_1.id)
 print(book.__dict__)
 
-book_repository.delete(book_1.id)
-author_repository.delete(author_1.id)
+# book_repository.delete(book_1.id)
+# author_repository.delete(author_1.id)
 
 
 pdb.set_trace()
