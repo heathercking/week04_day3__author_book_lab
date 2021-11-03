@@ -25,5 +25,11 @@ for author in author_repository.select_all():
 author = author_repository.select(author_1.id)
 print(author.__dict__)
 
+for book in book_repository.select_all():
+    print(book.__dict__)
+
+book = book_repository.select(book_1.id)
+print(book.__dict__)
+
 
 pdb.set_trace()
