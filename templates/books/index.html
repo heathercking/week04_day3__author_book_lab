@@ -7,7 +7,7 @@ BOOKS!
 {% for book in all_books %}
 
     <div>
-        <p>{{ book.title }}</p>
+        <p><a href="/books/{{ book.id }}">{{ book.title }}</a></p>
         <p>{{ book.author.first_name }} {{ book.author.last_name }}</p>
         <p>{{ book.publisher }}</p>
         <p>{{ book.publication_date }}</p>

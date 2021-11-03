@@ -32,7 +32,11 @@ def create_book():
     book_repository.save(book)
     return redirect("/books")
 
-
+# SHOW - GET /books/<id>
+@books_blueprint.route("/books/<id>", methods=['GET'])
+def show_book(id):
+    book = book_repository.select(id)
+    return render_template("books/show.html", book=book)
 
 
 # DELETE 
