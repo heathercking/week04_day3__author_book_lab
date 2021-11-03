@@ -7,6 +7,9 @@ import repositories.author_repository as author_repository
 import repositories.book_repository as book_repository
 
 
+book_repository.delete_all()
+author_repository.delete_all()
+
 author_1 = Author("JK", "Rowling")
 author_repository.save(author_1)
 author_2 = Author("Stephen", "King")
@@ -30,6 +33,9 @@ for book in book_repository.select_all():
 
 book = book_repository.select(book_1.id)
 print(book.__dict__)
+
+book_repository.delete(book_1.id)
+author_repository.delete(author_1.id)
 
 
 pdb.set_trace()
