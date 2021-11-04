@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='layouts.css') }}">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-          <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/books">Books</a></li>
-            <li><a href="/books/new">New Book</a></li>
-          </ul>
-        </nav>
+    <header class="navbar">
+        <div class="contrainer flex">
+            <h1 class="logo">LIBRARY</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/books">Books</a></li>
+                    <li><a href="/books/new">New Book</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-      <div class="container">
+      <div class="container grid">
         {% block content %}
         {% endblock %}
       </div>

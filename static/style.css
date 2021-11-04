@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root { 
+    --primary-color: #490B3D;  
+    --dark-pink: #BD1E51;
+    --secondary-color: #F1B814;
+    --dark-charcoal: #333;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px, 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    height: 130px;
+}
+
+.logo {
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 10ox;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px;
+    color: var(--white);
+}
+
+.navbar .flex {
+    flex-direction: column;
+}
+
+
+
+
